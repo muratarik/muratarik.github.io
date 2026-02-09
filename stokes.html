@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stokes Parameters – Murat Arik</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- MathJax -->
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+      line-height: 1.6;
+      color: #222;
+    }
+    h1, h2, h3 {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 6px;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .box {
+      background: #f8f9fb;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<a href="index.html">← Back to Home</a>
+
+<h1>Stokes Polarization Parameters</h1>
+
+<h2>Introduction</h2>
+
+<p>
+Stokes parameters provide a complete description of the polarization state of light
+using measurable intensity quantities. Unlike Jones formalism, Stokes parameters
+can describe partially polarized and unpolarized light.
+</p>
+
+<h2>Electric Field Representation</h2>
+
+<p>
+Consider two orthogonal plane waves at a point in space:
+</p>
+
+$$
+E_x = a_x \cos(\omega t), \quad
+E_y = a_y \cos(\omega t + \delta)
+$$
+
+<p>
+These components trace a polarization ellipse in the x–y plane.
+</p>
+
+<h2>Definition of Stokes Parameters</h2>
+
+$$
+S_0 = I_x + I_y
+$$
+$$
+S_1 = I_x - I_y
+$$
+$$
+S_2 = I_{45} - I_{135}
+$$
+$$
+S_3 = I_R - I_L
+$$
+
+<div class="box">
+Stokes parameters are real-valued quantities expressed entirely in terms of
+measurable light intensities.
+</div>
+
+<h2>Polarization Ellipse</h2>
+
+<p>
+The orientation angle $\theta$ of the polarization ellipse is given by:
+</p>
+
+$$
+\tan(2\theta) = \frac{S_2}{S_1}
+$$
+
+<h2>Degree of Polarization</h2>
+
+$$
+P = \frac{\sqrt{S_1^2 + S_2^2 + S_3^2}}{S_0}
+$$
+
+<ul>
+  <li>$P = 1$ — completely polarized light</li>
+  <li>$0 < P < 1$ — partially polarized light</li>
+  <li>$P = 0$ — unpolarized light</li>
+</ul>
+
+<h2>Examples of Fully Polarized Light</h2>
+
+<h3>Linear Horizontal Polarization</h3>
+
+$$
+\mathbf{S} =
+\begin{bmatrix}
+I \\ I \\ 0 \\ 0
+\end{bmatrix}
+$$
+
+<h3>Right Circular Polarization</h3>
+
+$$
+\mathbf{S} =
+\begin{bmatrix}
+I \\ 0 \\ 0 \\ I
+\end{bmatrix}
+$$
+
+<h2>Mueller Matrix Formalism</h2>
+
+<p>
+Mueller matrices describe how optical elements transform Stokes vectors:
+</p>
+
+$$
+\mathbf{S}_{out} = M \mathbf{S}_{in}
+$$
+
+<h3>Linear Polarizer</h3>
+
+$$
+M =
+\frac{1}{2}
+\begin{bmatrix}
+1 & 1 & 0 & 0 \\
+1 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
+$$
+
+<h3>Phase Shifters (Waveplates)</h3>
+
+<p>
+Waveplates introduce a relative phase shift between orthogonal field components.
+Common examples include quarter-wave and half-wave plates.
+</p>
+
+<h2>Measurement of Stokes Parameters</h2>
+
+<p>
+Stokes parameters are experimentally determined using combinations of:
+</p>
+
+<ul>
+  <li>Polarizers</li>
+  <li>Retarders (waveplates)</li>
+  <li>Intensity measurements at different orientations</li>
+</ul>
+
+<h2>Conclusion</h2>
+
+<p>
+Stokes parameters provide a robust and experimentally accessible framework for
+describing the polarization state of light in real optical systems.
+</p>
+
+</body>
+</html>
