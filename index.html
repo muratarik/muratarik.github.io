@@ -1,35 +1,250 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
+  <title>Murat Arik – Systems Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
     body {
-      font-family: Arial;
       margin: 0;
-      background: #0b0f19;
-      color: white;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #222;
+      line-height: 1.6;
     }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: white;
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #222;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    section {
+      padding: 100px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
     .hero {
       text-align: center;
-      padding: 120px 20px;
+      padding-top: 140px;
     }
+
+    h1 {
+      font-size: 44px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-top: 40px;
+    }
+
     .button {
-      padding: 12px 24px;
-      background: #4f46e5;
-      color: white;
+      background: #2563eb;
+      padding: 12px 20px;
       border-radius: 8px;
+      display: inline-block;
+      margin-top: 20px;
       text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #1e40af;
+    }
+
+    .card {
+      background: #f8f9fb;
+      padding: 22px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .skills-list span {
+      display: inline-block;
+      background: #eef2ff;
+      padding: 8px 12px;
+      margin: 6px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #fafafa;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
+
 <body>
 
-<div class="hero">
-  <h1>AI + Quantum Platform</h1>
-  <p>Building next-gen computational tools</p>
-  <a class="button" href="#">Learn more</a>
-</div>
+<nav>
+  <a href="index.html#about">About</a>
+  <a href="index.html#experience">Experience</a>
+  <a href="index.html#skills">Skills</a>
+  <a href="index.html#projects">Projects</a>
+  <a href="index.html#notes">Notes</a>
+  <a href="index.html#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h1>Murat Arik, Ph.D.</h1>
+  <p>Systems Engineer | Semiconductor Metrology | Optical Systems</p>
+  <a class="button" href="#contact">Contact Me</a>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    Organized Systems Engineer with extensive experience in optical experimental setups,
+    optical systems design, and advanced semiconductor processes. Skilled in designing,
+    developing, and building optical, electrical, and mechanical prototypes for photonics
+    and metrology applications.
+  </p>
+
+  <p>
+    Hands-on experience in low-temperature and high magnetic field electrical transport
+    and optical measurements. Proven ability to develop operational manuals, test procedures,
+    and SOPs while mentoring engineers and students in fast-paced environments.
+  </p>
+
+  <div class="card">
+    <ul>
+      <li>10+ years in data collection, analysis, and visualization</li>
+      <li>8+ years in installation, maintenance, and troubleshooting</li>
+      <li>5+ years working with low-temperature and high magnetic field measurements</li>
+      <li>Expert in optical, electrical, and mechanical prototyping</li>
+      <li>Developed SOPs, operational manuals, and test procedures</li>
+      <li>Mentored and trained engineers and students</li>
+    </ul>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Systems Engineer — Onto Innovation</h3>
+    <ul>
+      <li>Managed optical CD metrology tools (ATLAS, IRIS).</li>
+      <li>Integrated hardware upgrades and supported applications teams.</li>
+      <li>Resolved customer escalations at semiconductor manufacturing sites.</li>
+      <li>Improved tool performance through monitoring automation.</li>
+      <li>Reduced alignment time from 5 days to 3 days.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Optical Engineer — OSRAM</h3>
+    <ul>
+      <li>Built optical setups for material degradation studies.</li>
+      <li>Reduced testing cycle from 2 weeks to 3–4 hours.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Research Assistant — University at Buffalo</h3>
+    <ul>
+      <li>Developed polarization-sensitive photoluminescence systems.</li>
+      <li>Studied magneto-optical properties of advanced materials.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills-list">
+    <span>Semiconductor Metrology</span>
+    <span>Optical Alignment</span>
+    <span>Hardware Integration</span>
+    <span>Process Development</span>
+    <span>Python</span>
+    <span>MATLAB</span>
+    <span>LabVIEW</span>
+    <span>Machine Learning</span>
+    <span>Data Analysis</span>
+    <span>FTIR</span>
+    <span>Lock-in Amplifiers</span>
+    <span>Cryogenic Systems</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Photoluminescence Optical System</h3>
+    <p>
+      Designed and built optical setups to study material degradation and improve
+      measurement efficiency.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Semiconductor Tool Alignment</h3>
+    <p>
+      Prepared, aligned, and qualified advanced metrology tools for customer demos
+      and production environments.
+    </p>
+  </div>
+
+</section>
+
+<section id="notes">
+  <h2>Technical Notes</h2>
+
+  <div class="card">
+    <h3>Ellipsometry</h3>
+    <p>Fundamentals, equations, and semiconductor applications.</p>
+    <a href="ellipsometry.html">Read more →</a>
+  </div>
+
+  <div class="card">
+    <h3>Stokes Parameters</h3>
+    <p>Polarization theory and optical measurement techniques.</p>
+    <a href="stokes.html">Read more →</a>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: mumtazmurat@yahoo.com</p>
+  <p>
+    LinkedIn:
+    <a href="https://www.linkedin.com/in/mmuratarik/" target="_blank">
+      linkedin.com/in/mmuratarik
+    </a>
+  </p>
+</section>
+
+<footer>
+  © 2026 Murat Arik — Systems Engineering Portfolio
+</footer>
 
 </body>
 </html>
