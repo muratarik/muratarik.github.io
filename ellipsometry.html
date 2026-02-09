@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ellipsometry – Murat Arik</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- MathJax -->
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+      line-height: 1.6;
+      color: #222;
+    }
+    h1, h2, h3 {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 6px;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .box {
+      background: #f8f9fb;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<a href="index.html">← Back to Home</a>
+
+<h1>Ellipsometry</h1>
+
+<h2>What is Ellipsometry?</h2>
+<p>
+Ellipsometry is an optical characterization technique that measures changes in the
+polarization state of light upon reflection from a material surface.
+Its high sensitivity originates from the precise determination of the relative
+phase change between polarized light components.
+</p>
+
+<h2>Why Is Ellipsometry So Powerful?</h2>
+<p>
+The sensitivity of ellipsometry arises from measuring the relative phase difference
+between the reflected polarization components rather than absolute intensity.
+</p>
+
+<h2>What Is Measured?</h2>
+
+<p>
+Ellipsometry measures the complex ellipsometric ratio:
+</p>
+
+$$
+\rho = \frac{r_p}{r_s} = \tan(\Psi)e^{i\Delta}
+$$
+
+<p>
+Here, $r_p$ and $r_s$ are the complex Fresnel reflection coefficients for p- and
+s-polarized light. The experimentally measured quantities are:
+</p>
+
+<ul>
+  <li>$\Psi$ — amplitude ratio</li>
+  <li>$\Delta$ — phase difference</li>
+</ul>
+
+<div class="box">
+The ellipsometric ratio $\rho$ is a complex quantity containing both amplitude
+and phase information, which makes ellipsometry extremely sensitive to thin films
+and interfaces.
+</div>
+
+<h2>What Parameters Can Be Determined?</h2>
+
+<p>
+The ellipsometric ratio $\rho$ is related to the Fresnel equations, allowing the
+extraction of a wide range of optical and material properties:
+</p>
+
+<ul>
+  <li>Optical constants ($n$, $k$, $\varepsilon_1$, $\varepsilon_2$)</li>
+  <li>Thin film thickness</li>
+  <li>Surface and interfacial roughness</li>
+  <li>Alloy composition</li>
+  <li>Crystallinity</li>
+  <li>Optical anisotropy</li>
+  <li>Depth profiles</li>
+  <li>Growth rates</li>
+</ul>
+
+<h2>Mathematical Theory</h2>
+
+<p>
+For a non-conducting, non-dispersive medium, Maxwell’s equations lead to the
+electromagnetic wave equation. A plane-wave solution can be written as:
+</p>
+
+$$
+\mathbf{E}(\mathbf{r},t) = \mathbf{E}_0 e^{i(\mathbf{k}\cdot\mathbf{r}-\omega t)}
+$$
+
+<p>
+where the complex refractive index is defined as:
+</p>
+
+$$
+\tilde{n} = n + ik
+$$
+
+<h2>Jones Vectors and Jones Matrices</h2>
+
+<p>
+In the absence of space charges ($\rho = 0$) and assuming an isotropic material,
+the electric field components lie in the plane perpendicular to the propagation
+direction. The field can be expressed using s- and p-polarization components:
+</p>
+
+$$
+\mathbf{E} =
+\begin{bmatrix}
+E_p \\
+E_s
+\end{bmatrix}
+$$
+
+<p>
+This two-component representation is known as the Jones vector.
+Optical elements are described using 2×2 Jones matrices:
+</p>
+
+$$
+\mathbf{E}_{out} = J \mathbf{E}_{in}
+$$
+
+<p>
+The diagonal elements describe changes in amplitude and phase of the s and p
+components, while the off-diagonal elements represent coupling between them.
+</p>
+
+<h2>Polarization States</h2>
+
+<h3>Linear Polarization</h3>
+<p>
+In linear polarization, the s and p components have the same phase:
+</p>
+
+$$
+\Delta = 0
+$$
+
+<h3>Circular Polarization</h3>
+<p>
+In circular polarization, the components have equal magnitude and a phase
+difference of $\pm \pi/2$:
+</p>
+
+$$
+|E_p| = |E_s|,\quad \Delta = \pm \frac{\pi}{2}
+$$
+
+<h3>Elliptical Polarization</h3>
+<p>
+In elliptical polarization, the components have unequal magnitudes and a nonzero
+phase difference:
+</p>
+
+$$
+|E_p| \neq |E_s|,\quad \Delta \neq 0
+$$
+
+<h2>Definition of $\Psi$ and $\Delta$</h2>
+
+$$
+\tan(\Psi) = \left|\frac{r_p}{r_s}\right|,\quad
+\Delta = \arg(r_p) - \arg(r_s)
+$$
+
+<p>
+Once $\rho$ is measured, optical properties can be extracted by fitting Fresnel
+models to the experimental data.
+</p>
+
+<h2>Optical Ellipsometry Setup</h2>
+
+<p>
+In rotating analyzer ellipsometry:
+</p>
+
+<ul>
+  <li>Unpolarized light passes through a rotating polarizer</li>
+  <li>The beam reflects from the sample</li>
+  <li>A rotating analyzer modulates the reflected signal</li>
+  <li>Lock-in detection extracts $\Psi$ and $\Delta$</li>
+</ul>
+
+<h2>Conclusion</h2>
+
+<p>
+Ellipsometry provides complete information about thin films and interfaces through
+precise polarization measurements combined with Fresnel-based modeling.
+</p>
+
+</body>
+</html>
